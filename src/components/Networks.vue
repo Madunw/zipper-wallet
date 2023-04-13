@@ -16,7 +16,7 @@ export default {
   name: 'Networks',
   data() {
     return {
-      isDropdownOpen: false // 优化：使用布尔值标志下拉菜单是否展开
+      isDropdownOpen: false 
     }
   },
   computed: {
@@ -25,12 +25,16 @@ export default {
     })
   },
   methods: {
-    toggleDropdown() { // 优化：切换下拉菜单的展开状态
+    toggleDropdown() { 
       this.isDropdownOpen = !this.isDropdownOpen;
     },
     switchNetwork(networkName) {
       this.$store.commit('switchNetwork', networkName)
       this.refreshAccountData()
+      this.$message({
+          message: 'Switched to the ' + networkName,
+          type: 'success'
+        })
     },
     refreshAccountData() {
       this.$store.dispatch('getBalance')
@@ -46,8 +50,8 @@ export default {
   color: rgb(26, 2, 2);
   padding: 10px;
   width: 100px;
-  height: 34px;
-  font-size: 12px;
+  height: 32px;
+  font-size: 10px;
   border: none;
   cursor: pointer;
 }
@@ -60,7 +64,6 @@ export default {
 
 .dropdown {
   position: relative;
-  margin: 10px auto;
 }
 
 .dropdown-content {
@@ -72,6 +75,7 @@ export default {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   cursor: pointer;
+  margin: 0;
 }
 
 .dropdown-content a {

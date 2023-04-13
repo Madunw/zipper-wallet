@@ -2,7 +2,7 @@
   <div class="account" v-if="showAccount">
     <div>
       Address:
-      <el-link type="success" :href="blockExplorerUrl + 'address/' + userAddress">{{
+      <el-link type="success" :href="blockExplorerUrl + 'address/' + userAddress" target="_blank">{{
         userAddress
       }}</el-link>
     </div>
@@ -11,12 +11,12 @@
     </div>
   </div>
 
-  <div class="login">
+  <div>
     <div v-if="showLogInInput">
       <el-input placeholder="Enter your wallet Address" v-model="addressInput"></el-input>
       <el-button type="success" @click="setAddress">Log In</el-button>
     </div>
-    <el-button type="success" v-else @click="showLogInInput = true">Log In</el-button>
+    <el-button type="success" plain v-else @click="showLogInInput = true">Log In</el-button>
   </div>
 </template>
 
@@ -73,9 +73,6 @@ export default {
   font-size: larger;
   font-weight: bold;
   margin-bottom: 10px;
-}
-.login {
-  margin: 10px  0 10px 63px;
 }
 b {
   font-weight: bold;

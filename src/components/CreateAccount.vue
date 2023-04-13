@@ -1,7 +1,7 @@
 <template>
   <div class="create-account">
     <!-- Create Account button -->
-    <el-button type="success" @click="createAccount">Create Account</el-button>
+    <el-button type="success" plain @click="createAccount">Create Account</el-button>
     <div v-if="showRecoverInput">
       <label for="seed-phrase">Seed Phrase:</label>
       <!-- Input field for seed phrase -->
@@ -106,10 +106,7 @@ export default {
 
 <style scoped>
 .create-account {
-  text-align: center;
-}
-
-button {
-  margin: 10px 40px;
+  display: flex;
+  flex-direction: column;
 }
 </style>

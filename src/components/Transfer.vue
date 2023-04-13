@@ -50,6 +50,9 @@ export default {
   },
   methods: {
     async transferETH() {
+      this.$message({
+          message: 'Waiting for transaction to complete'
+        })
       try {
         let result = await sendToken(
           this.amount, // Pass amount data to sendToken function

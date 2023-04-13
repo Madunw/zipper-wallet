@@ -3,16 +3,16 @@
     <div class="header">
       <!-- Render Networks component -->
       <Networks />
-      <img src="./assets/logo.png"/>
+      <img src="./assets/logo.png" />
     </div>
 
     <el-divider></el-divider>
     <div class="account">
-      <h3>Account</h3>
+      <h5>Account</h5>
       <!-- Render Account component -->
       <Account />
       <!-- Render CreateAccount component -->
-    <CreateAccount />
+      <CreateAccount />
     </div>
 
     <el-collapse>
@@ -29,27 +29,30 @@
 </template>
 
 <script setup>
-import Networks from './components/Networks.vue'
-import CreateAccount from './components/CreateAccount.vue'
-import Account from './components/Account.vue'
-import Transactions from './components/Transactions.vue'
-import Transfer from './components/Transfer.vue'
-
-
+import Networks from './components/Networks.vue';
+import CreateAccount from './components/CreateAccount.vue';
+import Account from './components/Account.vue';
+import Transactions from './components/Transactions.vue';
+import Transfer from './components/Transfer.vue';
 </script>
 
-<style scoped>
+<style>
 .container {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 485px;
   margin: auto;
 }
 .header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.header img{
+.header img {
   width: 300px;
+  display: block;
   margin: auto;
+}
+button {
+  width: 140px;
+  margin: 4px 10px;
 }
 </style>

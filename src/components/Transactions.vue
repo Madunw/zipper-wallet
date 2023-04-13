@@ -22,6 +22,7 @@
         :total="transactionsFrom.length"
         :page-size="5"
         @current-change="handleCurrentChange"
+        hide-on-single-page
       ></el-pagination>
     </el-tab-pane>
     <el-tab-pane label="Received">
@@ -46,6 +47,7 @@
         :total="transactionsTo.length"
         :page-size="5"
         @current-change="handleCurrentChange"
+        hide-on-single-page
       ></el-pagination>
     </el-tab-pane>
   </el-tabs>

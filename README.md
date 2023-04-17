@@ -31,8 +31,4 @@ Obtain your own Alchemy API and Infura API keys before using, and write them in 
 
 
 ## Review
-<<<<<<< HEAD
 ![zipper-wallet-img2](https://user-images.githubusercontent.com/84227180/231878847-1313b0e4-dfd8-426b-8269-da85b8085f58.PNG)
-=======
-![zipper-wallet-img2](https://user-images.githubusercontent.com/84227180/231878847-1313b0e4-dfd8-426b-8269-da85b8085f58.PNG)
->>>>>>> ed092650f0a22a9acd1b575d219c2153a8d3b9f1

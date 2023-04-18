@@ -1,6 +1,6 @@
 # Zipper Wallet
 
-Demo review: <http://mayue.me/projects/zipper-wallet>   
+Demo review: <https://madunw.github.io/zipper-wallet/>   
 Check the Chrome extension version: <https://github.com/Madunw/zipeer-wallet-extension-demo>  
 
 This is a simple cryptocurrency wallet app that supports both the Ethereum mainnet and the Goerli testnet.   
